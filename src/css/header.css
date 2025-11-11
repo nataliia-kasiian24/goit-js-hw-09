@@ -3,7 +3,7 @@
 }
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .nav-logo {
   display: inline-flex;
@@ -41,4 +41,28 @@
 }
 .nav-link.active::after {
   background: #747bff;
+}
+
+body {
+  margin: 0;
+  padding: 24px 156px;
+}
+
+.gallery {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: repeat(3, 360px);
+  gap: 24px;
+  margin: 0;
+}
+
+.gallery-item {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery-image {
+  
+  object-fit: cover;
+  display: block;
 }
