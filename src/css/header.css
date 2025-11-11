@@ -1,3 +1,7 @@
+body {
+  background-color: #f7f7f7;
+}
+
 .header {
   padding: 20px 0;
 }
@@ -20,6 +24,7 @@
   position: relative;
   display: block;
   font-weight: 500;
+  font-size: 30px;
   letter-spacing: 0.02em;
   transition: 200ms ease-in;
 }
@@ -43,10 +48,6 @@
   background: #747bff;
 }
 
-body {
-  margin: 0;
-  padding: 24px 156px;
-}
 
 .gallery {
   display: grid;
@@ -66,3 +67,73 @@ body {
   object-fit: cover;
   display: block;
 }
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 408px;
+  height: 296px;
+  margin: 50px auto;
+  padding: 24px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 400;
+  color: #2e2f42;
+}
+
+.label-email{
+  display: flex;
+  letter-spacing: 0.04em;
+  padding-bottom: 32px;
+}
+
+
+.input-email{
+  border: 1px solid #808080;
+  border-radius: 4px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.textarea-label{
+  border: 1px solid #808080;
+  border-radius: 4px;
+  resize: none;
+  height: 80px;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.button-submit{
+  padding: 8px 16px;
+  border-radius: 8px;
+  width: 95px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.button-submit:hover {
+  background-color: #6c8cff;;
+}
+  
