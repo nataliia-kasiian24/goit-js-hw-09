@@ -12,6 +12,10 @@ function loadAndFillForm() {
         
         if (storedData) {
             const parsedData = JSON.parse(storedData);
+            formData = { ...formData, ...parsedData };
+
+            form.elements.email.value = formData.email || ""; 
+            form.elements.message.value = formData.message || "";
         }
     } catch (error) {
         console.error("Error loading data from localStorage:", error);
@@ -35,6 +39,7 @@ form.addEventListener("submit", (event) => {
         return;
     }
     console.log("Form Submitted:", formData);
+    
     localStorage.removeItem(STORAGE_KEY);
     formData = { email: "", message: "" };
     form.reset();
